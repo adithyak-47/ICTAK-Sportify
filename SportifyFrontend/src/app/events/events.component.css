@@ -1,0 +1,23 @@
+h1{
+    margin: 5vh;
+}
+
+.card
+{
+
+
+    background-color: rgb(235, 248, 248);
+ margin:13px ;
+text-align: center;
+color: #00a;
+}
+button{
+    margin-top: 1vh;
+    border: none;
+}
+.card-title
+{
+    font-weight: bolder;
+    text-transform: uppercase;
+    text-decoration: underline #f00 2px;
+}

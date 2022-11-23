@@ -1,0 +1,25 @@
+div
+{
+    width: 10px;
+    height: 10px;
+    background-color: aqua;
+    border-radius: 50%;
+}
+table
+{
+    margin: 2vw;
+    background-color:azure;
+    padding: 1vw;
+
+}
+button{
+    background-color: transparent;
+    border: none;
+}
+button:hover
+{
+    border: none;
+    color: red;
+    background-color: transparent;
+
+}

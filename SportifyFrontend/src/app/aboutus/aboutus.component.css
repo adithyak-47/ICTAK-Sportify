@@ -1,0 +1,101 @@
+.row2
+{
+    margin-left:25%;
+}
+.row
+{display: flex;
+    justify-content: center;
+    margin-top:10vh;
+
+  
+}
+body{
+    background-color: rgb(255, 255, 255);
+}
+
+.circ
+{position: relative;
+    height: fit-content;
+    width:17%;
+    max-width: 220px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+border-radius: 5%;
+  overflow: hidden;
+  min-width: 200px;
+  /* background-color: blue; */
+
+  margin: 10px;
+  z-index: 15;
+font-size: 80%;
+   min-height: 200px;
+}
+.circ .img1{
+    position:absolute;
+    height: 50;
+    width:50;
+    border-radius: 60%;
+    left:50;
+    left: 27.2%;
+    border-radius: 50%;
+
+}
+.contente
+{
+    visibility: hidden;
+    position: absolute;
+    width:60%;
+    text-align: center;
+    color: wheat;
+
+height: fit-content;    
+}
+.circ::before{
+    content: " ";
+  background-color: teal;
+visibility: hidden;
+    position: absolute;
+    width: 100px;
+    height: 100px;
+   border-radius: 50%;
+   
+
+
+}
+.circ:hover:before{
+    visibility: visible;
+    height: 280px;
+   z-index: 0;
+    width: 310px;
+    transition-duration: 1s;
+
+
+}
+
+.circ:hover .contente
+{
+    
+    right:1%;
+    visibility: visible;
+    transition-duration: 1s;
+    transition-delay: 1s;z-index:5;
+}
+.circ:hover .img1
+{position: absolute;
+
+    transition-delay: 0s;
+    transition-duration: 1s;
+    visibility: visible;
+    border-radius: 0%;
+
+    left:-10%;
+
+}
+
+a{
+    color: black;
+}
+a:hover{
+color: black;
+}

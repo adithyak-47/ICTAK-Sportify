@@ -1,0 +1,122 @@
+<div class="container">
+  <h1 style="color:teal ;">
+  Welcome Back
+  
+  </h1>
+  <div class="accordion" id="accordionExample1">
+    <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#hp" aria-expanded="true" aria-controls="hp">House wise Participants</button>  
+    <div id="hp" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample1">
+     <div class="accordion " id="accordionExample">
+      <div class="card red" >
+        <div class="card-header" id="headingOne">
+          <h5 class="mb-0">
+            <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseRED" aria-expanded="true" aria-controls="collapseOne">
+                Red
+            </button>
+          </h5>
+        </div>
+    
+        <div id="collapseRED" class="collapse " aria-labelledby="headingOne" data-parent="#accordionExample">
+          <div class="card-body">
+          <ul *ngFor="let j of data">
+             <li *ngIf="j.house=='Red'">
+              {{j.name}} &nbsp; {{j.events}}
+             </li>
+          </ul>
+          </div>
+        </div>
+      </div>  <div class="accordion " id="accordionExample">
+        <div class="card yellow" >
+          <div class="card-header" id="headingOne">
+            <h5 class="mb-0">
+              <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseYELLOW" aria-expanded="true" aria-controls="collapseOne">Yellow</button>
+            </h5>
+          </div>
+      
+          <div id="collapseYELLOW" class="collapse " aria-labelledby="headingOne" data-parent="#accordionExample">
+            <div class="card-body">
+            <ul *ngFor="let j of data">
+               <li *ngIf="j.house=='Yellow'">
+                {{j.name}} &nbsp; {{j.events}}
+    
+               </li>
+    
+            </ul>
+            </div>
+          </div>
+        </div>
+    
+      </div>
+  
+    </div>
+    <div class="accordion " id="accordionExample">
+      <div class="card green" >
+        <div class="card-header" id="headingOne">
+          <h5 class="mb-0">
+            <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseGreen" aria-expanded="true" aria-controls="collapseOne">
+        Green
+            </button>
+          </h5>
+        </div>
+    
+        <div id="collapseGreen" class="collapse " aria-labelledby="headingOne" data-parent="#accordionExample">
+          <div class="card-body">
+          <ul *ngFor="let j of data">
+             <li *ngIf="j.house=='Green'">
+              {{j.name}} &nbsp; {{j.events}}
+  
+             </li>
+  
+      
+          </ul>
+          </div>
+        </div>
+      </div>
+  
+    </div>
+    <div class="accordion " id="accordionExample">
+      <div class="card blue" >
+        <div class="card-header" id="headingOne">
+          <h5 class="mb-0">
+            <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseBlue" aria-expanded="true" aria-controls="collapseOne">
+        Blue
+            </button>
+          </h5>
+        </div>
+    
+        <div id="collapseBlue" class="collapse " aria-labelledby="headingOne" data-parent="#accordionExample">
+          <div class="card-body">
+          <ul *ngFor="let j of data">
+             <li *ngIf="j.house=='Blue'">
+              {{j.name}}  &nbsp; {{j.events}}
+  
+             </li>
+  
+          </ul>
+          </div>
+        </div>
+      </div>
+  
+    </div>
+  </div>
+   <br>
+   <br>
+  <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#events" aria-expanded="true" aria-controls="events">Events</button>
+  <div id="events" class="collapse text-dark" aria-labelledby="headingTwo" data-parent="#accordionExample1">
+  <ul *ngFor="let i of events">
+  <li>{{i.event}}</li>
+  </ul>
+  <div class="accordian" data-parent="#accordionExample2">
+    <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#addmore" aria-expanded="true" aria-controls="addmore">addmore</button>  
+    <div class="formstuff "class="collapse text-dark" aria-labelledby="headingTwo" id="addmore">
+    <form action="" method="post">
+      <input type="text" name="event" [(ngModel)]="event" >
+      <button (click)="addevents()" type="submit" ><i class="fas fa-plus"></i></button>
+  
+    </form>
+  </div>
+  
+  </div>
+  </div>
+  </div>
+  </div>

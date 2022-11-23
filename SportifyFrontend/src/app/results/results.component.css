@@ -1,0 +1,42 @@
+
+.container
+{
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    margin-top: 3vh;
+   
+  
+}
+.res{
+    display: flex;
+    height: 5vh;
+    font-weight: bolder;
+    font-size:2vh;
+
+    align-items:center ;
+    margin: .5vh;
+  padding-left: 2vh;
+    border-radius:0  0vh 1.5vh 0;
+    background-color:rgba(203, 170, 240, 0.772);
+    
+}
+.no1
+{
+    width: 70vw;
+  
+}.no2
+{
+    
+    width: 60vw;
+ 
+}.no3
+{
+    
+    width: 40vw;
+
+}.no4
+{
+    
+    width: 20vw;
+}

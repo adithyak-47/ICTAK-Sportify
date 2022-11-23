@@ -1,0 +1,54 @@
+.dot
+{
+    width: 10px;
+    height: 10px;
+   color: aqua;
+    border-radius: 50%;
+}
+.accordion
+{
+text-align: justify;
+    color: rgb(0, 0, 0);
+   color: orange;
+    font-weight: bold;
+    /* background-color: w?; */
+    /* margin-left: 1vw; */
+}
+div{
+    background-color: white;
+    border: none;
+}
+input
+{
+    border-radius: 4px;
+}
+button{
+    color: black;
+    font-weight: 700;
+    border-radius: 6px;
+    background-color: antiquewhite;
+}
+button:hover{
+    text-decoration: none;
+}
+.green
+{
+   color: rgb(9, 255, 0);
+}
+.yellow
+{
+   color: rgba(214, 214, 6, 0.781);
+}
+.red
+{
+   color: red;
+}
+.blue
+{
+   color: #00f;
+}
+
+button:focus
+{
+    color: darkcyan;
+}

@@ -1,0 +1,198 @@
+.back
+{
+  background-image: url(https://img.freepik.com/free-vector/gradient-triangles-abstract-sport-background_52683-14013.jpg) ;
+  background-size: cover;
+  backdrop-filter:blur(10px) !important;
+  
+  background-repeat: no-repeat ;
+}
+.container{
+    width: 100vw;
+    height:max-content;
+    min-height: 100vh;
+    flex-wrap: wrap;
+    display: flex;
+    flex-direction: row;
+       align-items: center;
+    justify-content: center;
+   
+    
+}
+.row
+{
+    display: flex;
+    /* background-color: white; */
+  height: fit-content;
+   width: fit-content;
+   min-height: 200px;
+   flex-direction: row;
+    align-content: space-around;
+    justify-content: space-around;
+
+
+}
+
+.eachUser{
+    background-color: whitesmoke;
+    position: relative;
+    width: 18vw;
+    min-width:200px ;
+    /* border: 2px solid black; */
+   height: 20vw;
+    float: left;
+    min-height: 300px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px;
+    color: black;
+display: flex;
+flex-direction: column;
+/* justify-content: center; */
+padding-top: 2vw;
+text-align: center;
+align-items: center;
+margin: 1vw;
+padding: 2.1vw;
+background-image:url("src\app\home\bck.png");
+
+border-radius: 7px;
+box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+
+
+}
+.eachUser:hover{
+top:-10px;
+box-shadow: rgb(255, 255, 255) 0px 0px 15px 15px;
+}
+input{
+    position: relative;
+    width: 70%;
+}
+
+
+/* CSS */
+.button-48 {
+    display: flex;
+  appearance: none;
+  background-color: #FFFFFF;
+  border-width: 0;
+  box-sizing: border-box;
+  color: #000000;
+  cursor: pointer;
+  display: inline-block;
+  font-family: Clarkson,Helvetica,sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 0;
+  line-height: 1em;
+  margin: 0;
+  opacity: 1;
+  outline: 0;
+ padding: 1em;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  text-rendering: geometricprecision;
+  text-transform: uppercase;
+  transition: opacity 300ms cubic-bezier(.694, 0, 0.335, 1),background-color 100ms cubic-bezier(.694, 0, 0.335, 1),color 100ms cubic-bezier(.694, 0, 0.335, 1);
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: baseline;
+  white-space: nowrap;
+  height: fit-content;
+  width: fit-content;
+  font-size: 70%;
+  font-weight: bolder;
+  text-align: center;
+  border-radius:3px ;
+  position: relative;
+
+}
+
+.button-48:before {
+  animation: opacityFallbackOut .5s step-end forwards;
+  backface-visibility: hidden;
+  background-color: orange;
+  clip-path: polygon(-1% 0, 0 0, -25% 100%, -1% 100%);
+  content: "";
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  transform: translateZ(0);
+  transition: clip-path .5s cubic-bezier(.165, 0.84, 0.44, 1), -webkit-clip-path .5s cubic-bezier(.165, 0.84, 0.44, 1);
+  width: 100%;
+  color: #FFFFFF;
+
+}
+
+.button-48:hover:before {
+  animation: opacityFallbackIn 0s step-start forwards;
+  clip-path: polygon(0 0, 101% 0, 101% 101%, 0 101%);
+  box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.05) 0px 8px 32px;
+}
+.button-48:hover {
+    color:#fff;
+  }
+.neo
+{
+  width:1000px;
+}
+.button-48:after {
+  background-color: #FFFFFF;
+  
+}
+
+.button-48 span {
+  z-index: 1;
+  position: relative;
+}
+.intro{
+  /* background-color: #000000; */
+ 
+animation: jumpin 4s;
+}
+.fromsides
+{
+
+  position: relative;
+
+  animation: fromside 3s  ;
+  
+}
+@keyframes fromside {
+  from
+  {
+
+    position: -100vw;
+    transform: translateX(100%);
+  }
+  to
+  {
+    position: -10vw;
+  }
+  
+}
+@keyframes jumpin{
+  from
+  {
+transform: scale(0.1);
+
+    
+  
+  }
+  to
+  {
+   transform: scale(1);
+  }
+  
+}
+@media screen and (max-width:700px) {
+  .intro{
+
+display: none;
+  }
+  .fromside{
+    margin:5vh  !important;
+  }
+  
+}

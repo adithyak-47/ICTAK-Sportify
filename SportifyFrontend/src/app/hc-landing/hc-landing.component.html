@@ -1,0 +1,34 @@
+<h1 style="text-align: center;color:rgb(5, 89, 89)">Welcome Caps</h1>
+
+    <table class="table">
+        <thead>
+          <tr>
+          
+            <th scope="col">Name</th>
+            <th scope="col">Class</th>
+            <th scope="col">Events</th>
+          </tr>
+        </thead>
+        <tbody>
+        
+          <tr *ngFor="let i of data">
+         
+            <th scope="row">{{i.name}}</th>
+            <td>{{i.house}}</td>
+            <td> 
+              <ul *ngFor="let j of i.events">
+                <li>{{j}} &nbsp;&nbsp;&nbsp;
+                  <button (click)="DeleteEvent(i._id,j)">
+
+                    <i class="fa fa-trash" style="background:none ;font-size: 20px;" ></i>
+
+                  </button>
+                </li>
+              
+              </ul>
+            </td>
+            
+          </tr>
+          
+        </tbody>
+      </table>
