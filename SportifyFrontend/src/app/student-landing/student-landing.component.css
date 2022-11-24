@@ -40,3 +40,29 @@ justify-content: center;
 align-items: center;
 
 }
+ul
+{
+  display: inline-flex;
+  list-style-type: none;
+  flex-direction: column;
+}
+li
+{
+  margin: -15px;
+  
+}
+
+#eventdelbutton
+{
+  background-color: cyan;
+  width: max-content;
+  margin: 5px;
+  border-spacing: 10px;
+  border: 3px ridge cyan;
+  border-radius: 27px;
+  transition: 0.7s;
+}
+#eventdelbutton:hover{
+  box-shadow: 3px 3px 3px 1px  black;
+  margin-top: -10px;
+}

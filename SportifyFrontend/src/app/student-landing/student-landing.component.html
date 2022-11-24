@@ -12,7 +12,11 @@
  
        
         <h5>House: {{studenthouse}}</h5>
-       <h5>Events: {{studentevents}} </h5>
+        <h5 id="topdiv">Events:
+         <ul *ngFor="let i of studentevents" id="ullist">
+           <li><button id="eventdelbutton" (click)="removeevent(i)">{{i}} <i class="fa fa-close"></i></button></li>
+         </ul>
+        </h5>
      
        
      

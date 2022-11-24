@@ -53,4 +53,16 @@ registerEvent = (event:any) =>{
   )
 }
 
+removeevent = (event:any) =>{
+  let id = this.studentinfo._id;
+  let data = {"_id":id, "event":event};
+  this.api.DeleteStudentEvent(data).subscribe(
+    (res)=>{
+      console.log(res);
+      alert("Updated successfully!");
+      location.reload();
+    }
+  )
+}
+
 }

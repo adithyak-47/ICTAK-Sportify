@@ -5,3 +5,8 @@
     margin-right: 3vw;
     
 }
+button
+{
+    border: none;
+    background-color: transparent;
+}
