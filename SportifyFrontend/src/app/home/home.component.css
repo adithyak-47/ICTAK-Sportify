@@ -1,6 +1,6 @@
 .back
 {
-  background-image: url(https://img.freepik.com/free-vector/gradient-triangles-abstract-sport-background_52683-14013.jpg) ;
+  background-image: url(https://wallpaperaccess.com/full/317284.jpg) ;
   background-size: cover;
   backdrop-filter:blur(10px) !important;
   
@@ -18,6 +18,8 @@
    
     
 }
+
+
 .row
 {
     display: flex;
@@ -43,6 +45,8 @@
     min-height: 300px;
     box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px;
     color: black;
+    font-weight: 600;
+    padding: 1vh;
 display: flex;
 flex-direction: column;
 /* justify-content: center; */
@@ -50,6 +54,7 @@ padding-top: 2vw;
 text-align: center;
 align-items: center;
 margin: 1vw;
+
 padding: 2.1vw;
 background-image:url("src\app\home\bck.png");
 
@@ -58,9 +63,13 @@ box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30p
 
 
 }
+p{
+  text-align: justify;
+  margin-top: 10px;
+}
 .eachUser:hover{
 top:-10px;
-box-shadow: rgb(255, 255, 255) 0px 0px 15px 15px;
+box-shadow: rgb(255, 255, 255) 0px 0px 15px 10px;
 }
 input{
     position: relative;
@@ -76,6 +85,8 @@ input{
   border-width: 0;
   box-sizing: border-box;
   color: #000000;
+  position: relative;
+  bottom: -00%;
   cursor: pointer;
   display: inline-block;
   font-family: Clarkson,Helvetica,sans-serif;
@@ -103,11 +114,14 @@ input{
   font-size: 70%;
   font-weight: bolder;
   text-align: center;
-  border-radius:3px ;
+  border-radius:25px ;
   position: relative;
 
 }
-
+.sport
+{
+  font-family: Acquire;
+}
 .button-48:before {
   animation: opacityFallbackOut .5s step-end forwards;
   backface-visibility: hidden;
@@ -122,6 +136,7 @@ input{
   transition: clip-path .5s cubic-bezier(.165, 0.84, 0.44, 1), -webkit-clip-path .5s cubic-bezier(.165, 0.84, 0.44, 1);
   width: 100%;
   color: #FFFFFF;
+  border-radius:25px ;
 
 }
 
@@ -129,9 +144,11 @@ input{
   animation: opacityFallbackIn 0s step-start forwards;
   clip-path: polygon(0 0, 101% 0, 101% 101%, 0 101%);
   box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.05) 0px 8px 32px;
+  border-radius:25px ;
 }
 .button-48:hover {
     color:#fff;
+    border-radius:25px ;
   }
 .neo
 {
@@ -151,6 +168,7 @@ input{
  
 animation: jumpin 4s;
 }
+
 .fromsides
 {
 
@@ -195,4 +213,7 @@ display: none;
     margin:5vh  !important;
   }
   
+}
+h4{
+  font-weight: 700;
 }
