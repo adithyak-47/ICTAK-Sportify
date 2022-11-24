@@ -43,14 +43,22 @@ studentinfo:any = [];
 
 registerEvent = (event:any) =>{
   let id = this.studentinfo._id;
-  let data = {"event":event,"_id":id};
-  this.api.registerStudentEvent(data).subscribe(
-    (res)=>{
-      console.log(res);
-      alert("Event added successfully!!");
-      location.reload();
-    }
-  )
+  let events = this.studentinfo.events;
+  if(events.includes(event))
+  {
+    alert("This event is already registered!");
+  }
+  else
+  {
+    let data = {"event":event,"_id":id};
+    this.api.registerStudentEvent(data).subscribe(
+      (res)=>{
+        console.log(res);
+        alert("Event added successfully!!");
+        location.reload();
+      }
+    )
+  }
 }
 
 removeevent = (event:any) =>{
