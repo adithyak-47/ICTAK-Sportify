@@ -27,6 +27,11 @@ export class HcLandingComponent implements OnInit {
   }
 
   ngOnInit(): void {
+    document.body.className = "selector";
+  }
+  ngOnDestroy():void
+  {
+    document.body.className = "";
   }
   data:any = [];
   tokeninfo:any;
