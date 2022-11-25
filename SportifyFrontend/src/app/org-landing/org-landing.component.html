@@ -1,5 +1,6 @@
+<div class="back">
 <div class="container">
-  <h1 style="color:teal ;">
+  <h1 >
   Welcome Back
   
   </h1>
@@ -20,7 +21,7 @@
           <div class="card-body">
           <ul *ngFor="let j of data">
              <li *ngIf="j.house=='Red'">
-              {{j.name}} &nbsp; {{j.events}}
+              {{j.name}} &nbsp;: {{j.events}}
              </li>
           </ul>
           </div>
@@ -37,7 +38,7 @@
             <div class="card-body">
             <ul *ngFor="let j of data">
                <li *ngIf="j.house=='Yellow'">
-                {{j.name}} &nbsp; {{j.events}}
+                {{j.name}} &nbsp;: {{j.events}}
     
                </li>
     
@@ -63,7 +64,7 @@
           <div class="card-body">
           <ul *ngFor="let j of data">
              <li *ngIf="j.house=='Green'">
-              {{j.name}} &nbsp; {{j.events}}
+              {{j.name}} &nbsp;: {{j.events}}
   
              </li>
   
@@ -88,7 +89,7 @@
           <div class="card-body">
           <ul *ngFor="let j of data">
              <li *ngIf="j.house=='Blue'">
-              {{j.name}}  &nbsp; {{j.events}}
+              {{j.name}}  &nbsp;: {{j.events}}
   
              </li>
   
@@ -107,11 +108,11 @@
   <li>{{i.event}}</li>
   </ul>
   <div class="accordian" data-parent="#accordionExample2">
-    <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#addmore" aria-expanded="true" aria-controls="addmore">addmore</button>  
+    <button class="btn btn-link  addmore" type="button"  data-toggle="collapse" data-target="#addmore" aria-expanded="true" aria-controls="addmore">addmore</button>  
     <div class="formstuff "class="collapse text-dark" aria-labelledby="headingTwo" id="addmore">
     <form action="" method="post">
       <input type="text" name="event" [(ngModel)]="event" >
-      <button (click)="addevents()" type="submit" ><i class="fas fa-plus"></i></button>
+      <button class="addmorebutton" (click)="addevents()" type="submit" ><i class="fas fa-plus"></i></button>
   
     </form>
   </div>
@@ -120,3 +121,4 @@
   </div>
   </div>
   </div>
+</div>
