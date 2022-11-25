@@ -36,6 +36,10 @@ input
 {
     border-radius: 4px;
 }
+.container
+{
+    background-color: rgb(170, 96, 0);
+}
 
 button{
     color: black;
@@ -97,18 +101,16 @@ ul{
 {
     background-color:rgba(0,0,0);
 }
-.back
+
+.backe
 {
     background-image: url(./back.jpg);
 
-
     background-repeat: no-repeat;
-background-size: cover;
-backdrop-filter: blur(15px);
-min-height: 80vh;
+    background-size: cover;
+    min-height: 80vh;
+    margin-top:-19px;
     /* background-color: black; */
-
-   
 }
 .addmorebutton
 {
@@ -119,7 +121,7 @@ min-height: 80vh;
 {
     width: 200px;
     margin-left: 40%;
-    
+    margin-bottom: 100px;
 }
 *
 {

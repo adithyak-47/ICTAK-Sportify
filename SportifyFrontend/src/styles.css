@@ -22,3 +22,11 @@ body
 title{
     font-family: Acquire;
 }
+.selector
+{
+    background-image: url("../src/app/org-landing/back.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100vh;
+
+}
