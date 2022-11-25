@@ -1,16 +1,32 @@
 .row2
 {
     margin-left:25%;
+    max-height: 80vh
+}
+.back
+{
+    background-image: url("https://img.freepik.com/free-vector/white-background-with-triangle-patterns_1017-18410.jpg");
+background-size: cover;
+height: fit-content;
+padding-bottom: 10vh;
 }
 .row
 {display: flex;
     justify-content: center;
     margin-top:10vh;
+background-size: 10vw;
+height: 70vh;
+width:100vw
 
   
 }
+h1{
+    font-weight: bolder;
+    color: darkslategrey;
+}
 body{
-    background-color: rgb(255, 255, 255);
+background-color: red;
+
 }
 
 .circ
@@ -53,7 +69,7 @@ height: fit-content;
 }
 .circ::before{
     content: " ";
-  background-color: teal;
+  background-color: rgb(142, 142, 142);
 visibility: hidden;
     position: absolute;
     width: 100px;
@@ -62,6 +78,9 @@ visibility: hidden;
    
 
 
+}
+b{
+    font-size: 15px;
 }
 .circ:hover:before{
     visibility: visible;
@@ -91,6 +110,20 @@ visibility: hidden;
 
     left:-10%;
 
+}
+.description
+{
+    width: 80vw;
+    height: 10vh;
+    min-height: fit-content;
+    background-color: red;
+    margin-left: 10vw;
+    
+    text-align: justify;
+    padding: auto;
+    box-shadow: ;
+   
+    font-weight: 700;
 }
 
 a{

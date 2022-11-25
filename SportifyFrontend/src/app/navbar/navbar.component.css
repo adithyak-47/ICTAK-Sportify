@@ -3,7 +3,39 @@
 {
     margin: 2vh;
     margin-right: 3vw;
-    
+    transition: all 0.3s ease;
+    color: #f5f5f5;
+    max-width: 90px;    
+    text-align: center;
+}
+
+
+.extra_space
+{
+    width:200px ;
+}
+.navbar-brand:hover
+{
+    /* color:  rgb(141, 236, 218); */
+    color: #000;
+
+}
+.navbar-toggler-icon
+{
+    color: aqua;
+    background-color: red;
+}
+.img2{
+    position: relative;
+    height: 8vw;
+    box-shadow: 0 5px 15px 10px rgba(145, 92, 182, .4);
+    width: 8vw;
+    min-height: 100px;
+    min-width: 100px;
+    float: left;
+    border-radius:50%;
+
+      background-color: transparent;
 }
 button
 {
