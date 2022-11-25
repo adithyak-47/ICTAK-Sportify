@@ -5,50 +5,130 @@
    color: aqua;
     border-radius: 50%;
 }
+h1
+{
+    text-align: center;
+    font-weight: 900;
+    margin-top: 3vh;
+    margin-bottom:3vh;
+    color: aliceblue;
+}
 .accordion
 {
 text-align: justify;
     color: rgb(0, 0, 0);
    color: orange;
+   background-color: transparent;
     font-weight: bold;
     /* background-color: w?; */
     /* margin-left: 1vw; */
+    /* margin-left: 20vw; */
 }
 div{
-    background-color: white;
+    /* background-color: white; */
     border: none;
 }
+/* #accordionExample1
+{
+    /* margin-left: 20vw; */
+/* } */ 
 input
 {
     border-radius: 4px;
 }
+
 button{
     color: black;
     font-weight: 700;
-    border-radius: 6px;
-    background-color: antiquewhite;
+    border-radius: 25px;
+    background-color: #c7a42b !important;
+    position: relative;
+    width: 100%;
+
+
 }
+
 button:hover{
     text-decoration: none;
 }
 .green
 {
-   color: rgb(9, 255, 0);
+    color: black !important;
 }
 .yellow
 {
-   color: rgba(214, 214, 6, 0.781);
+   color: black !important;
+
 }
 .red
 {
-   color: red;
+   color: black !important;
+
 }
 .blue
 {
-   color: #00f;
+   color: black !important;
+
 }
 
 button:focus
 {
     color: darkcyan;
+}
+input{
+    margin-bottom: 1vh;
+    margin-top: 1vh;
+    margin-right: 1vw;
+    margin-left: 40%;
+    background-color: aliceblue;
+    color: white;
+    border: 2px solid white;
+}
+li{
+    margin: 10px !important;
+}
+ul{
+    list-style-type: none;
+    background-color: #c7a42b !important;
+    border-radius: 25px;
+
+}
+.card-header
+{
+    background-color:rgba(0,0,0);
+}
+.back
+{
+    background-image: url(./back.jpg);
+
+
+    background-repeat: no-repeat;
+background-size: cover;
+backdrop-filter: blur(15px);
+min-height: 80vh;
+    /* background-color: black; */
+
+   
+}
+.addmorebutton
+{
+    width: 100px;
+
+}
+.addmore
+{
+    width: 200px;
+    margin-left: 40%;
+    
+}
+*
+{
+    background-color: transparent !important;
+}
+@media screen and (max-width:700px ) {
+    .addmorebutton
+    {
+        margin-left: 50%;
+    
+    } 
 }
