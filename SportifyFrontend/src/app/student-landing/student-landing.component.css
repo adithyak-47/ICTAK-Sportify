@@ -1,18 +1,27 @@
 h1{
   margin: 5vh;
+  color: #c7a42b;
+  font-weight: bolder;
+  text-align: center;
 }
 
 .card
 {
 
 
-  background-color: rgb(235, 248, 248);
+  background: radial-gradient(ellipse farthest-corner at right bottom, #FEDB37 0%, #FDB931 8%, #9f7928 30%, #8A6E2F 40%, transparent 80%),
+  radial-gradient(ellipse farthest-corner at left top, #FFFFFF 0%, #FFFFAC 8%, #D1B464 25%, #5d4a1f 62.5%, #5d4a1f 100%);
 margin:13px ;
 text-align: center;
 color: #00a;
 min-height: 150px;
 min-height: 150px;
-box-shadow: 4px 4px #ff0;
+border-radius: 10px;
+}
+.card:hover
+{
+  top:-10px;
+  box-shadow: #c7a42b 0px 0px 15px 10px;
 }
 button{
   margin-top: 1vh;
@@ -23,13 +32,12 @@ button{
 {
   font-weight: bolder;
   text-transform: uppercase;
-  text-decoration: underline #f00 2px;
 }
 
-.container1
+/* .container1
 {
 background-color: rgb(235, 248, 248);
-}
+} */
 .container
 {
 
@@ -54,15 +62,34 @@ li
 
 #eventdelbutton
 {
-  background-color: cyan;
+  background-color: #c7a42b;
   width: max-content;
   margin: 5px;
   border-spacing: 10px;
-  border: 3px ridge cyan;
+  border: 3px ridge #c7a42b;
   border-radius: 27px;
-  transition: 0.7s;
+  transition: 0.7s ;
 }
 #eventdelbutton:hover{
-  box-shadow: 3px 3px 3px 1px  black;
-  margin-top: -10px;
+  box-shadow: 3px 3px 3px 1px  #c7a42b ;
+  margin-top: -15px ;
+}
+.h5
+{
+  color: #c7a42b ;
+  font-weight: bolder;
+}
+.btn
+{
+  background-color: goldenrod;
+  font-weight: bold;
+}
+h5
+{
+  color: black;
+}
+#topdiv
+{
+  color: #c7a42b ;
+  font-weight: bold;
 }

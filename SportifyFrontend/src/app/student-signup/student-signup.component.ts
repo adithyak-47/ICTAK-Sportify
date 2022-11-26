@@ -12,6 +12,11 @@ export class StudentSignupComponent implements OnInit {
   constructor(private api:ApiService, private router:Router) { }
 
   ngOnInit(): void {
+    document.body.className = "selector";
+  }
+  ngOnDestroy():void
+  {
+    document.body.className = "";
   }
   user = "";
   pass = "";

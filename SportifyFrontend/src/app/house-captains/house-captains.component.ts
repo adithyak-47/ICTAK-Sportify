@@ -12,8 +12,12 @@ export class HouseCaptainsComponent implements OnInit {
   constructor(private router:Router, private auth:AuthenticateService) {
    }
 
-  ngOnInit(): void {
-  
+   ngOnInit(): void {
+    document.body.className = "selector";
+  }
+  ngOnDestroy():void
+  {
+    document.body.className = "";
   }
 
   housename = "";

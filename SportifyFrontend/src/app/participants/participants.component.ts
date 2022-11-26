@@ -13,7 +13,12 @@ export class ParticipantsComponent implements OnInit {
 
    }
 
-  ngOnInit(): void {
+   ngOnInit(): void {
+    document.body.className = "selector";
+  }
+  ngOnDestroy():void
+  {
+    document.body.className = "";
   }
   name = "";
   pass = "";

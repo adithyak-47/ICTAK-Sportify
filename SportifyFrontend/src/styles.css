@@ -28,5 +28,6 @@ title{
     background-repeat: no-repeat;
     background-size: cover;
     min-height: 100vh;
+    /* backdrop-filter: blur(5px); */
 
 }

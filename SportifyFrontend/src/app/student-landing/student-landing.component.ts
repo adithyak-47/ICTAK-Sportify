@@ -31,6 +31,11 @@ export class StudentLandingComponent implements OnInit {
   }
 
   ngOnInit(): void {
+    document.body.className = "selector";
+  }
+  ngOnDestroy():void
+  {
+    document.body.className = "";
   }
 
 a:any=[]

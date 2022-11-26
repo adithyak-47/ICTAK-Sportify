@@ -27,7 +27,7 @@
 .img2{
     position: relative;
     height: 8vw;
-    box-shadow: 0 5px 15px 10px rgba(145, 92, 182, .4);
+    box-shadow: 0 5px 15px 10px;
     width: 8vw;
     min-height: 100px;
     min-width: 100px;
@@ -43,8 +43,9 @@ button
 }
 .navbar
 {
-    background-color:#c7a42b;
-    background-image: linear-gradient(25deg,#CC9934,#1e1d1b);
+    background: radial-gradient(ellipse farthest-corner at right bottom, #FEDB37 0%, #FDB931 8%, #9f7928 30%, #8A6E2F 40%, transparent 80%),
+  radial-gradient(ellipse farthest-corner at left top, #FFFFFF 0%, #FFFFAC 8%, #D1B464 25%, #5d4a1f 62.5%, #5d4a1f 100%);
+
 }
 *
 {

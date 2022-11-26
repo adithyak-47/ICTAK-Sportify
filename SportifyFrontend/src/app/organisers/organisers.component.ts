@@ -25,6 +25,11 @@ export class OrganisersComponent implements OnInit {
   }
 
   ngOnInit(): void {
+    document.body.className = "selector";
+  }
+  ngOnDestroy():void
+  {
+    document.body.className = "";
   }
 
 }

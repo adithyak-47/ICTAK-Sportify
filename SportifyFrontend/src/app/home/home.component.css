@@ -1,11 +1,4 @@
-.back
-{
-  background-image: url(https://wallpaperaccess.com/full/317284.jpg) ;
-  background-size: cover;
-  backdrop-filter:blur(10px) !important;
-  
-  background-repeat: no-repeat ;
-}
+
 .container{
     width: 100vw;
     height:max-content;
