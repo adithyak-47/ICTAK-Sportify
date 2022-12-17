@@ -8,10 +8,10 @@ This is a full stack application, built using Angular, Node.js, Express.js and M
 3. Students: The students can register themselves onto the app with their respective houses, and can register for available events. The student can also
              withdraw from an event as per needs, and cannot register for the same event twice.
              
-The application uses JWT(JSON Web Tokens) for authentication, and also has route guards in place to ensure that unauthorized access to certain pages is avoided.
+The application uses JWT (JSON Web Tokens) for authentication, and also has route guards in place to ensure that unauthorized access to certain pages is avoided.
 The credentials for house captains are assumed to be given to them by the organisers. 
 
-# STEPS TO RUN THE APPLICATION
+# Steps to run the application
 1. Download or clone the application.
 2. Navigate to the Sportifybackend folder, run "npm install" to install node modules and run "node index.js" command to run the backend.
 3. Navigate to the SportifyFrontend folder, run "npm install" to install node modules and run "ng serve" command to serve the frontend.
